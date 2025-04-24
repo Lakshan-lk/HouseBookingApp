@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Onboardingscreen3Activity">
+
+    <ImageView
+        android:id="@+id/onscreen03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onscreen03" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:scaleType="fitXY"
+        android:scrollbarSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/onscreen03"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottom_white" />
+
+    <TextView
+        android:id="@+id/text_housebooking"
+        android:layout_width="378dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/easily_search_and_filter_to_find_your_dream_home"
+        android:textColor="#000000"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/text_cap"
+        android:layout_width="306dp"
+        android:layout_height="54dp"
+        android:text="@string/use_smart_filters_to_refine_your_search_by_price_location_and_amenities"
+        android:textColor="#8B8B8B"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/text_housebooking"
+        app:layout_constraintTop_toBottomOf="@+id/text_housebooking" />
+
+    <TextView
+        android:id="@+id/btn_next3"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:background="@drawable/background_button_intro"
+        android:gravity="center"
+        android:text="@string/_next_"
+        android:textColor="#FFFFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
